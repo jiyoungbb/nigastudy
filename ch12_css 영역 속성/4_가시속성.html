@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>CSS 영역속성</title>
+        <style>
+            div{
+                width: 200px; height: 100px;
+                background-color: orange;
+            }
+            
+            /* 1. display: none; */
+            /*요소 안보이게 처리, 영역도 사라짐*/
+            .box01{ display: none;}
+
+            /* 2. visibility: hidden;  */
+            /* 요소 안보이게 처리, 영역은 남아있음*/
+            .box02{ visibility: hidden; }
+
+            /* 3. opacity: 0; (0.0~1.0)*/
+            /* 요소 안보이게 처리, 영역은 남아있음*/
+            .box03{ opacity: 0; }
+        </style>
+    </head>
+    <body>
+        <p>문단태그</p>
+        <div class="box01"></div>
+        <p>문단태그</p>
+        <hr />
+        <p>문단태그</p>
+        <div class="box02"></div>
+        <p>문단태그</p>
+        <hr />
+        <p>문단태그</p>
+        <div class="box03"></div>
+        <p>문단태그</p>
+    </body>
+</html>
+
+
+
+
+
+
+
+
