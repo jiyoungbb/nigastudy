@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>폼 태그</title>
+    </head>
+    <body>
+        <form action="#">
+            <fieldset>
+                <legend>기본 선택상자</legend>
+                <label for="lunch01">점심메뉴선택 : </label>
+                <select id="lunch01">
+                    <option>김치찌개</option>
+                    <option selected>짜장면</option>
+                    <option>냉모밀</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>그룹 선택상자</legend>
+                <label for="lunch02">점심메뉴선택 : </label>
+                <select id="lunch02">
+                    <optgroup label="중식">
+                        <option>짜장면</option>
+                        <option>짬뽕</option>
+                    </optgroup>
+                    <optgroup label="한식">
+                        <option>김치찌개</option>
+                        <option>된짱찌개</option>
+                    </optgroup>
+                    <optgroup label="일식">
+                        <option>초밥</option>
+                        <option>모밀</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+        </form>
+    </body>
+</html>

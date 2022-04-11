@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>폼 태그</title>
+        <style>
+            label{position: absolute; left: -999em;}
+            button{width: 200px;}
+            .text{float: left;}
+            .icon{float: right;}
+        </style>
+    </head>
+    <body>
+        <form action="#">
+            <input type="button" value="버튼01" id="btn">
+            <label for="btn">버튼</label>
+            <button type="button">버튼02</button>
+            <hr>
+            <!-- 버튼태그는 label태그를 작성하지 않아도 됨 -->
+            <!-- 버튼태그는 자손을 담을 수 있음 -->
+            <button>
+                <span class="text">패밀리사이트</span>
+                <span class="icon">d</span>
+            </button>
+        </form>
+    </body>
+</html>

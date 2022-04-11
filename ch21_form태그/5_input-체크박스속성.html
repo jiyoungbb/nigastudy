@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>폼 태그</title>
+    </head>
+    <body>
+        <form action="#">
+            <!-- checkbox는 여러값을 체크하고 싶을 때 사용 -->
+            <fieldset>
+                <legend>취미 체크</legend>
+                <input type="checkbox" id="hobby01">
+                <label for="hobby01">게임</label><br>
+                <input type="checkbox" id="hobby02">
+                <label for="hobby02">영화감상</label><br>
+                <input type="checkbox" id="hobby03" checked>
+                <label for="hobby03">음주가무</label>
+            </fieldset>
+
+            <!-- radio는 체크될 값 중 한개만 체크해야할 때 사용 -->
+            <fieldset>
+                <legend>성별 체크</legend>
+                <input type="radio" id="male" name="gender" checked>
+                <label for="male">남자</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female">여자</label>
+            </fieldset>
+        </form>
+    </body>
+</html>
