@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation 속성</title>
+        <style>
+            img{ 
+                display: block; margin-bottom: 20px;
+                position: relative;
+
+                animation-name: move;
+                animation-duration: 1s;
+            }
+
+            /* animation-fill-mode : 애니메이션이 재생되지 않을 때(시작 전, 종료 후 또는 둘 다) 요소의 스타일을 지정 */
+            img:nth-child(1){animation-fill-mode: backwards;}
+            img:nth-child(2){animation-fill-mode: forwards;}
+            
+            
+            @keyframes move{
+                from{ left: 0; transform: rotate(0deg); }
+                to{ left: 500px; transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/ball.png" alt="공1">
+        <img src="../images/ball.png" alt="공2">
+    </body>
+</html>

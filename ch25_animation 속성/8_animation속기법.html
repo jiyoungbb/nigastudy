@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation 속성</title>
+        <style>
+            img{ 
+                display: block; margin-bottom: 20px;
+                position: relative;
+                
+                animation: move 4s infinite;
+            }
+     
+            @keyframes move{
+                from{left: 0; top: 0;}
+                25%{left: 500px; top: 0;}
+                50%{left: 500px; top: 500px;}
+                75%{left: 0; top: 500px;}
+                to{left: 0; top: 0;}
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/ball.png" alt="공1">
+    </body>
+</html>

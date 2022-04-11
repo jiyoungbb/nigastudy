@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation 속성</title>
+        <style>
+            img{ 
+                display: block; margin-bottom: 20px;
+                position: relative;
+
+                animation-name: move;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            /* animation-timing-function : 애니메이션의 속도 곡선을 지정 */
+            img:nth-child(1){animation-timing-function: ease;}
+            img:nth-child(2){animation-timing-function: ease-in;}
+            img:nth-child(3){animation-timing-function: ease-out;}
+            img:nth-child(4){animation-timing-function: linear;}
+            img:nth-child(5){animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);}
+            
+            @keyframes move{
+                from{ left: 0; transform: rotate(0deg); }
+                to{ left: 500px; transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/ball.png" alt="공1">
+        <img src="../images/ball.png" alt="공2">
+        <img src="../images/ball.png" alt="공3">
+        <img src="../images/ball.png" alt="공4">
+        <img src="../images/ball.png" alt="공5">
+        <img src="../images/ball.png" alt="공6">
+    </body>
+</html>

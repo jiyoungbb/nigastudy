@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation 속성</title>
+        <style>
+            img{ 
+                display: block; margin-bottom: 20px;
+
+                position: relative;
+
+                /* @keyframe 애니메이션의 이름을 지정*/
+                animation-name: move;
+
+                /* 애니메이션이 한 주기를 완료하는 데 걸리는 시간을 정의*/
+                animation-duration: 1s;
+            }
+
+            img:nth-child(1){
+                animation-duration: 1s;
+            }
+
+            img:nth-child(2){
+                animation-duration: 2s;
+            }
+
+            @keyframes move{
+                /*애니메이션 시작점*/
+                from{left: 0; transform: rotate(0deg);}
+
+                /*애니메이션 끝점*/
+                to{left: 500px; transform: rotate(360deg);}
+            }
+            
+        </style>
+    </head>
+    <body>
+        <img src="../images/ball.png" alt="공1">
+        <img src="../images/ball.png" alt="공2">
+    </body>
+</html>

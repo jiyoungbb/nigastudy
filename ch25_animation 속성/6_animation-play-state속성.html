@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>animation 속성</title>
+        <style>
+            img{ 
+                display: block; margin-bottom: 20px;
+                position: relative;
+
+                animation-name: move;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            /* animation-play-state : 애니메이션이 실행 중인지 일시 중지되었는지 지정 */
+            img:hover{animation-play-state: paused;}
+            
+            @keyframes move{
+                from{ left: 0; transform: rotate(0deg); }
+                to{ left: 500px; transform: rotate(360deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <img src="../images/ball.png" alt="공1">
+        <img src="../images/ball.png" alt="공2">
+    </body>
+</html>
