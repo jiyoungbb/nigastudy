@@ -1,0 +1,35 @@
+<!DOCTYh3E html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 선택자</title>
+        <style>
+            /* 1. 선수들 앞에 별표 붙이기 - 색상도 변경 */
+            h3::before{
+                content: '⭐️';
+                margin-right: 10px;
+            }
+            /* 2. 선수들 뒤에 선수 글자 붙이기 - 색상/글자크기변경 */
+            h3::after{
+                content: '선수';
+                color: gray; font-size: 14px;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>한국 여자배구 국가대표팀 (2020 도쿄올림픽)</h2>
+        <h3>이소영</h3>
+        <h3>염혜선</h3>
+        <h3>김희진</h3>
+        <h3>안혜진</h3>
+        <h3>박은진</h3>
+        <h3>오지영</h3>
+        <h3>김연경</h3>
+        <h3>김수지</h3>
+        <h3>박정아</h3>
+        <h3>양효진</h3>
+        <h3>정지윤</h3>
+        <h3>표승주</h3>
+    </body>
+</html>

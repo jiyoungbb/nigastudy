@@ -1,0 +1,44 @@
+<!DOCTYh3E html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 선택자</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+
+            h3{ padding: 10px; }
+            dl{ margin: 10px; }
+            dt{
+                padding: 20px;
+                border: 1px solid #ccc;
+            }
+            dd{
+                padding: 20px;
+                background-color: #ccc;
+                margin-bottom: 10px;
+            }
+
+            /* dt{margin-bottom: 10px;}
+            dd{display: none;}
+            dt.first{margin-bottom: 0;}
+            dd.first{display: block;} */
+
+            dd:not(.first){display: none;}
+            dt:not(.first){margin-bottom: 10px;}
+            
+        </style>
+    </head>
+    <body>
+        <h3>자주하는 질문</h3>
+        <dl>
+            <dt class="first">단체는 몇 명부터 적용이 되는지요?</dt>
+            <dd class="first">호암미술관은 20명 이상의 단체의 경우 단체요금을 적용하고 있습니다.</dd>
+            <dt>주차 요금은 얼마인가요?</dt>
+            <dd>주차는 무료입니다. 다만 주차장의 한계(총 80여 대)로 인하여 봄, 가을 성수기에는 대중교통을 이용해주세요.</dd>
+            <dt>미술관 내에 식사할 만한 곳이 있나요?</dt>
+            <dd>미술관 내와 희원에서는 음식물 반입을 금하고 있습니다.</dd>
+            <dt>호암미술관은 어떤 작품을 전시하고 있나요?</dt>
+            <dd>저희 미술관은 1, 2층의 전시장에 기획전시와 더불어 서화, 도자, 목가구 등 200여 점의 한국전통 예술품을 소개하고 있습니다.</dd>
+        </dl>
+    </body>
+</html>

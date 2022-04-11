@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 선택자</title>
+        <style>
+            /* 1. child방식 */
+            div > h1:nth-child(1){ text-decoration: underline; }
+            div > h1:nth-child(2){ text-decoration: underline; } 
+            /* h1태그는 2번째 자손에는 존재하지 않음 */
+            
+
+            /* 2. of-type방식 */
+            div > *:nth-of-type(1){color: red;}
+            div > *:nth-of-type(2){color: green;}
+            div > *:nth-of-type(3){color: blue;}
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>제목태그1</h1><!-- 1 -->
+            <h2>제목태그2</h2><!-- 2 -->
+            <h3>제목태그3</h3><!-- 3 -->
+            <h1>제목태그1</h1>
+            <h2>제목태그2</h2>
+            <h3>제목태그3</h3>
+            <h1>제목태그1</h1>
+            <h2>제목태그2</h2>
+            <h3>제목태그3</h3>
+        </div>
+    </body>
+</html>

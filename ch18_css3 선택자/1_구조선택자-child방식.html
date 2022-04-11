@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3 선택자</title>
+        <style>
+            *{ padding: 0; margin: 0; } /* 모든 태그의 여백 제거 */
+
+            ul{ margin: 50px; } /* 여백처리 */
+            li{ 
+                float: left; /* 수평나열 처리 */
+                list-style: none; /* 기호제거 */
+                padding: 20px; /* 안쪽여백 - 배경색O */
+            } 
+
+            /* 1. 각각 배경색처리할 예정 */
+            li:nth-child(1){background-color: red;}
+            li:nth-child(2){background-color: orange;}
+            li:nth-child(3){background-color: yellow;}
+            li:nth-child(4){background-color: green;}
+            li:nth-child(5){background-color: blue;}
+            li:nth-child(6){background-color: navy;}
+            li:nth-child(7){background-color: purple;}
+
+            /* 2. 첫번째와 마지막 양쪽 끝 모서리둥글게 처리할 예정 */
+            li:first-child{border-radius: 10px 0 0 10px;}
+            li:last-child{border-radius: 0 10px 10px 0;}
+
+            /* 3. odd/even : 홀수짝수 글자색 다르게 처리할 예정 */
+            li:nth-child(odd){color: gray;}
+            li:nth-child(even){color: white;}
+
+            /* 4. 3의 배수에만 밑줄 처리할 예정 */
+            li:nth-child(3n){text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+        <ul><!-- 부모 -->
+            <li>빨강</li><!-- 자손 -->
+            <li>주황</li>
+            <li>노랑</li>
+            <li>녹색</li>
+            <li>파랑</li>
+            <li>남색</li>
+            <li>보라</li>
+        </ul>
+    </body>
+</html>
