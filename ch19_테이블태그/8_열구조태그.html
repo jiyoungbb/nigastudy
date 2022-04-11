@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>테이블 태그</title>
+        <style>
+           .col01{background-color: pink;}
+           .col02{background-color: green;}
+           .col03{background-color: maroon;}
+        </style>
+    </head>
+    <body>
+        <!-- 표구조 확인을 위해 border사용 -->
+        <table border="1">
+            <caption>강남역 커피전문점매출</caption>
+            <colgroup>
+                <col span="1" class="col01">
+                <col span="2" class="col02">
+                <col span="2" class="col03">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>커피점</th>
+                    <th>스타벅스 강남R점</th>
+                    <th>스타벅스 몬테소리점</th>
+                    <th>커피빈 강남에스점</th>
+                    <th>커피빈 강남역GT타워점</th>
+                </tr>
+                <tr>
+                    <th>위치</th>
+                    <th>강남역 1,2번출구</th>
+                    <th>강남역 9,10번출구</th>
+                    <th>강남역 10번출구</th>
+                    <th>강남역 9,10번출구</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1분기</th>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <th>2분기</th>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <th>3분기</th>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <th>4분기</th>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>합계</th>
+                    <td>320</td>
+                    <td>320</td>
+                    <td>320</td>
+                    <td>320</td>
+                </tr>
+                <tr>
+                    <th>평균</th>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>80</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

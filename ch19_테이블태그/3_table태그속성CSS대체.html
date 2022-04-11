@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>테이블 태그</title>
+        <style>
+            table{
+                /* table 태그 cellspacing 속성 대체 */
+                border-spacing: 0;
+                border-collapse: collapse; /* 셀간의 선겹침허용 */
+
+                width: 500px;
+            }
+            th, td{
+                /* table태그 border 속성 대체 */
+                border: 1px solid black; 
+
+                /* table 태그 cellpadding 속성 대체 */ 
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>표의제목</caption>
+            <tr>
+                <th>제목셀</th>
+                <th>제목셀</th>
+                <th>제목셀</th>
+            </tr>
+            <tr>
+                <td>일반셀</td>
+                <td>일반셀</td>
+                <td>일반셀</td>
+            </tr>
+            <tr>
+                <td>일반셀</td>
+                <td>일반셀</td>
+                <td>일반셀</td>
+            </tr>
+        </table>
+    </body>
+</html>
