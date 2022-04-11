@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 박스모델</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+
+            .wrap{
+                width: 1100px; height: 260px;
+                margin: 20px auto;
+                background-color: pink;
+            }
+
+            /* 260x4 = 1040, 20x3 = 60  => 1100 */
+            .wrap > div{ /* .wrap의 모든 자손인 div선택 */
+                float: left; width: 260px; height: 260px;
+                margin-right: 20px;
+            }
+            .wrap > .box04{ margin-right: 0; }
+
+            .box01{ background-color: #008ace; }
+            .box02{ background-color: #2763ba; }
+            .box03{ background-color: #2ca48f; }
+            .box04{ 
+                background-color: #fff; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="box01">진료예약</div>
+            <div class="box02">진료과/센터</div>
+            <div class="box03">진료안내</div>
+            <div class="box04">로그인</div>
+        </div>
+    </body>
+</html>
