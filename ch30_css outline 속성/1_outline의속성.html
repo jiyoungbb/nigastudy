@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS outline속성</title>
+        <style>
+            p{ 
+                border: 3px solid black; padding: 10px;
+                text-transform: capitalize; font-weight: bold;
+                
+                /* 1. outline-width : 윤곽선의 굵기 지정 */
+                outline-width: 3px;
+
+                /* 2. outline-color : 윤곽선의 색상 지정 */
+                outline-color: red;
+            }
+
+            /* 3. outline-style : 윤곽선의 선스타일 지정*/
+            .dotted{ outline-style: dotted; }
+            .dashed{ outline-style: dashed; }
+            .solid{ outline-style: solid; }
+            .double{ outline-style: double; }
+            .groove{ outline-style: groove; }
+            .ridge{ outline-style: ridge; }
+            .inset{ outline-style: inset; }
+            .outset{ outline-style: outset; }
+        </style>
+    </head>
+    <body>
+        <p class="dotted">dotted outline</p>
+        <p class="dashed">dashed outline</p>
+        <p class="solid">solid outline</p>
+        <p class="double">double outline</p>
+        <p class="groove">groove outline</p>
+        <p class="ridge">ridge outline</p>
+        <p class="inset">inset outline</p>
+        <p class="outset">outset outline</p>
+    </body>
+</html>

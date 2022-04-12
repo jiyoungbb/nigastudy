@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS outline속성</title>
+        <style>
+            p{ 
+                border: 3px solid black; padding: 10px; margin: 20px;
+                text-transform: capitalize; font-weight: bold;
+                background-color: yellow;
+
+                outline: 3px solid red;
+            }
+
+            /* outline-offset : outline과 border사이의 여백처리 */
+            p:first-child{ outline-offset: 10px; }
+        </style>
+    </head>
+    <body>
+        <p>test outline</p>
+        <p>test outline</p>
+    </body>
+</html>
