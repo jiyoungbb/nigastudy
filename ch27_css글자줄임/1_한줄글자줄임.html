@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>한줄텍스트 글자줄임</title>
+        <style>
+            div{
+                width: 200px; height: 30px;
+                background-color: orange;
+                line-height: 30px; /* height와 같은 값 주면서 수직정렬이 됨 */
+                white-space: nowrap; /* 부모영역과 관계없이 한 줄로 처리 */
+                overflow: hidden; /* 부모영역보다 큰 자손을 안 보이게 처리 */
+                text-overflow: ellipsis;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            타오르고 옷을 속잎나고, 열락의 살 따뜻한 얼마나 스며들어 아니다.
+        </div>
+    </body>
+</html>
