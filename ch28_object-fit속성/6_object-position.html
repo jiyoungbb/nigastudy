@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>object-fit 속성</title>
+        <style>
+            div{
+                float: left;
+                width: 250px; padding: 10px;
+                border: 2px solid black;
+                margin: 20px;
+            }
+            img{ 
+                width: 250px; height: 250px; 
+                object-fit: cover;
+            }
+            .test01{ height: 315px; }
+            .test01 img{
+                width: 250px; height: auto;
+                object-fit: fill;
+            }
+            .test02 img{
+                object-position: 50% 50%;
+            }
+            .test03 img{
+                object-position: left top;
+            }
+            .test04 img{
+                object-position: right bottom;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test01">
+            <h3>기본이미지</h3>
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <div class="test02">
+            <h3>기본값 - 가운데 처리</h3>
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <div class="test03">
+            <h3>좌측상단처리</h3>
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <div class="test04">
+            <h3>우측하단처리</h3>
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+    </body>
+</html>

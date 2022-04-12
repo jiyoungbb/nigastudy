@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>object-fit 속성</title>
+        <style>
+            div{
+                width: 500px; padding: 10px;
+                border: 2px solid black;
+            }
+            .test img{
+                width: 300px; height: 300px;
+                object-fit: fill;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>원본이미지</h3>
+        <div>
+            <!-- 기본이미지 : 500x318 -->
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <hr>
+        <h3>fill - 기본값</h3>
+        <div class="test">
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>object-fit 속성</title>
+        <style>
+            div{
+                width: 500px; padding: 10px;
+                border: 2px solid black;
+            }
+            img{ width: 250px; height: 250px; }
+            .test img{
+                /* 요소의 가로나 세로크기에 가능한 맞춰져 크기가 조정되고, 비율은 고정된 상태 */
+                /* 개체 크기에 맞게 잘린다. 가득 채울때까지 확대 */
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>fill - 기본값</h3>
+        <div>
+            <!-- 기본이미지 : 500x318 -->
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <hr>
+        <h3>cover</h3>
+        <div class="test">
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+    </body>
+</html>

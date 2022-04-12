@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>object-fit 속성</title>
+        <style>
+            div{
+                width: 500px; padding: 10px;
+                border: 2px solid black;
+            }
+            img{ width: 250px; height: 250px; }
+            .test01 img{
+                /* 가장 작은 이미지가 되려고 함 */
+
+                /* contain 처리 */
+                object-fit: scale-down;
+            }
+            .test02 img{
+
+                /* none 처리 */
+                object-fit: scale-down;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>scale-down : 큰이미지</h3>
+        <div class="test01">
+            <!-- 기본이미지 : 500x318 -->
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <hr>
+        <h3>scale-down : 작은이미지</h3>
+        <div class="test02">
+            <!-- 작은이미지 : 150x95 -->
+            <img src="../images/img_small.jpg" alt="테스트">
+        </div>
+    </body>
+</html>

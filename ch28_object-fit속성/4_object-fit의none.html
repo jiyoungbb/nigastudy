@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>object-fit 속성</title>
+        <style>
+            div{
+                width: 500px; padding: 10px;
+                border: 2px solid black;
+            }
+            img{ width: 250px; height: 250px; }
+            .test01 img{
+                object-fit: cover;
+            }
+            .test02 img{
+                object-fit: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>cover</h3>
+        <div class="test01">
+            <!-- 기본이미지 : 500x318 -->
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+        <hr>
+        <h3>none</h3>
+        <div class="test02">
+            <img src="../images/img.jpg" alt="테스트">
+        </div>
+    </body>
+</html>
