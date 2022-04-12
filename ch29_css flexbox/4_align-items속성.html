@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px; height: 100px;
+                padding: 10px; margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 70px;  /* 높이를 주지 않음 */
+                background-color: orange;
+            }
+
+            /* align-items : 플렉스받은 자손 요소들을 부모영역에서 세로 정렬하는 속성 */
+            /* strech : 기본값. 자손 높이가 부모영역을 꽉 채움 */ 
+            .box01{align-items: stretch;}
+
+            /* flex-start : 자손은 부모영역의 시작 부분에 배치 */ 
+            .box02{align-items: flex-start;}
+
+            /* flex-end : 자손은 부모영역의 끝 부분에 배치 */ 
+            .box03{align-items: flex-end;}
+            
+            /* center : 자손은 부모영역의 가운데 부분에 배치 */ 
+            .box04{align-items: center;}
+
+            .box05 > div{width: 100px;}
+            /* baseline : 자손은 부모의 기준선에 배치 */
+            .box05{align-items: baseline;}
+        </style>
+    </head>
+    <body>
+        <h3>1. stretch</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>2. flex-start</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>3. flex-end</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>4. center</h3>
+        <section class="box04">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>5. baseline</h3>
+        <section class="box05">
+            <div style="font-size: 20px;">박스1</div>
+            <div style="font-size: 30px;">박스2</div>
+            <div style="font-size: 10px;">박스3</div>
+            <div style="font-size: 35px;">박스4</div>
+            <div style="font-size: 15px;">박스5</div>
+        </section>
+    </body>
+</html>

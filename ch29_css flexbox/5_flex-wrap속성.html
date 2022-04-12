@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px;
+                padding: 10px; margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 100px; height: 100px;
+                margin: 0 20px;
+                background-color: orange;
+            }
+
+            /* flex-wrap : 자손들이 폭이 부모폭보다 클때 줄바꿈할지를 지정하는 속성 */
+            /* nowrap : 기본값. 자손들이 유연해져 줄바꿈처리가 되지 않게 처리 */
+            .box01{ flex-wrap: nowrap; }
+            /* wrap : 자손들이 부모 폭보다 큰 경우 줄바꿈 처리 */
+            .box02{ flex-wrap: wrap; }
+            /* wrap-reverse : 자손들이 여러 줄인 경우 줄의 순서를 뒤집어 처리 */
+            .box03{ flex-wrap: wrap-reverse; }
+        </style>
+    </head>
+    <body>
+        <h3>1. nowrap</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+            <div>박스6</div>
+            <div>박스7</div>
+            <div>박스8</div>
+        </section>
+        <hr>
+        <h3>2. wrap</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+            <div>박스6</div>
+            <div>박스7</div>
+            <div>박스8</div>
+        </section>
+        <hr>
+        <h3>3. wrap-reverse</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+            <div>박스6</div>
+            <div>박스7</div>
+            <div>박스8</div>
+        </section>
+    </body>
+</html>

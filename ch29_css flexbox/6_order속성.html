@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px;
+                padding: 10px; margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 100px; height: 100px; 
+                line-height: 100px; text-align: center; 
+                margin: 0 10px; 
+                background-color: orange;
+            }
+
+            /* order : flex받은 자손 요소의 순서를 바꾸는 속성 */
+            /* 기본값 : 0 - 원래 자기 위치에 있음 */
+            div:nth-child(1){ order: 3; }
+            div:nth-child(2){ order: 5; }
+            div:nth-child(3){ order: 4; }
+            div:nth-child(4){ order: 2; }
+            div:nth-child(5){ order: 1; }
+        </style>
+    </head>
+    <body>
+        <h3>1. order</h3>
+        <section>
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+    </body>
+</html>

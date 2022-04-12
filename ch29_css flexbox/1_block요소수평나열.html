@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px; padding: 10px;
+                margin: 10px 20px;
+                border: 3px solid black;
+            }
+            div{ width: 100px; height: 100px; }
+
+            /* 1. display: inline-block */
+            /* 장점: 부모가 자손의 높이 인식 */
+            /* 단점: 요소 사이에 공백 발생, 계산 미흡으로 무너짐 */
+            .box01 > div{
+                background-color: pink;
+                display: inline-block;
+            }
+
+            /* 2. float: left */
+            /* 장점: 요소 사이에 공백이 발생하지 않음 */
+            /* 단점: 부모가 자손의 높이 인식 못함, 다음 요소가 따라 올라옴, 계산 미흡으로 무너짐*/
+
+            /* 극복방법 */
+            /* 1. 부모의 높이를 정확히 작성 */
+            /* .box02{height: 100px;} */
+
+            /* 2. 부모에 overflow: hidden;을 줌 */
+            /* .box02{overflow: hidden;} */
+
+            /* 3. clearfix : overflow: hidden;을 주면 안되는 요소에 처리 가능 */
+            .box02::after{
+                content: '';
+                display: block; /* 수직으로 다 차지 */
+                clear: both; /* 동생요소들이 따라올라오지 못하게 처리 */
+            }
+            .box02 > div{
+                background-color: lightblue;
+                float: left;
+            }
+
+
+            /* 3. display: flex */
+            /* 장점: 부모가 자손 높이 인식, 요소 사이 공백 x, 계산 미흡으로 무너지지 않음 */
+            /* 단점: ie10이하에서 적용되지 않아 크로스브라우징이 힘들다.*/
+            .box03{display: flex;}
+            .box03 > div{
+                background-color: orange;
+                margin: 0 30px;
+            }
+
+
+           
+        </style>
+    </head>
+    <body>
+        <h3>1. display: inline-block</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>2. float: left</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>3. display: flex</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+    </body>
+</html>

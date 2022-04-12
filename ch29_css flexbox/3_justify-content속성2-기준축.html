@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 10px 20px; }
+            section{
+                width: 700px; height: 250px;
+                margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+                justify-content: flex-start; /* 시작으로 처리 */
+            }
+            div{ 
+                width: 50px; height: 50px; 
+                border: 3px solid navy;
+                box-sizing: border-box;
+                background-color: orange;
+            }
+
+            .box01{ flex-direction: row;}
+            .box02{ flex-direction: row-reverse;}
+            .box03{ flex-direction: column;}
+            .box04{ flex-direction: column-reverse;}
+            
+        </style>
+    </head>
+    <body>
+        <h3>1. row</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+        </section>
+        <hr>
+        <h3>2. row-reverse</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+        </section>
+        <hr>
+        <h3>3. column</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+        </section>
+        <hr>
+        <h3>4. column-reverse</h3>
+        <section class="box04">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+        </section>
+    </body>
+</html>

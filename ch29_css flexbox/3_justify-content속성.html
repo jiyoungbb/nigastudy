@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 10px 20px; }
+            section{
+                width: 700px; padding: 10px 0;
+                margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 50px; height: 50px; 
+                border: 3px solid navy;
+                box-sizing: border-box;
+                background-color: orange;
+            }
+
+            /* justify-content : 플렉스받은 자손 요소들을 가로(기본축) 정렬하는 속성 */
+            /* flex-start : 기본값. 자손은 부모영역의 시작 부분에 배치 */
+            .box01{ justify-content: flex-start;}
+            
+            /* flex-end : 자손은 부모영역의 끝에 배치 */
+            .box02{ justify-content: flex-end;}
+            
+            /* center : 자손은 부모영역의 중앙에 배치 */
+            .box03{ justify-content: center;}
+
+            /* space-between : 첫요소와 끝요소를 양쪽 끝으로 붙이고 나머지 요소들과 균등배분 */
+            .box04{ justify-content: space-between;}
+
+            /* space-around : 자손인 flex 박스들이 부모의 공간을 동일하게 여백을 갖고 정렬 */
+            .box05{ justify-content: space-around;}
+
+            /* space-evenly : 자손요소간의 동일한 여백 설정 */ 
+            .box06{ justify-content: space-evenly;}
+        </style>
+    </head>
+    <body>
+        <h3>1. flex-start</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>2. flex-end</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>3. center</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>4. space-between</h3>
+        <section class="box04">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>5. space-around</h3>
+        <section class="box05">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>6. space-evenly</h3>
+        <section class="box06">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+    </body>
+</html>

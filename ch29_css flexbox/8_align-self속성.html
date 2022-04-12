@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px; height: 100px;
+                padding: 10px; margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 100px; 
+                /* 높이를 작성하지 않음 */
+                text-align: center; 
+                margin: 0 10px; 
+                background-color: orange;
+            }
+
+            /* align-self : 자손요소를 부모요소 영역에서 세로 정렬하는 위치를 지정하는 속성 */
+            div:nth-child(1){ align-self: flex-start; }
+            div:nth-child(2){ align-self: flex-end; }
+            div:nth-child(3){ align-self: center; }
+        </style>
+    </head>
+    <body>
+        <h3>1. flex</h3>
+        <section>
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+    </body>
+</html>

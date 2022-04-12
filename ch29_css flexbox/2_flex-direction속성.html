@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>flexbox</title>
+        <style>
+            *{ padding: 0; margin: 0; }
+            h3{ padding: 20px; }
+            section{
+                width: 700px; padding: 10px;
+                margin: 10px 20px;
+                border: 3px solid black;
+
+                display: flex; /* 부모요소에 flex처리 */
+            }
+            div{ 
+                width: 100px; height: 100px; 
+                background-color: orange;
+            }
+
+            /* flex-direction : 자손요소를 수평/수직나열시키는 속성 */
+            .box01{ flex-direction: row;}
+
+            .box02{ flex-direction: row-reverse;}
+
+            .box03{ flex-direction: column;}
+
+            .box04{ flex-direction: column-reverse;}
+        </style>
+    </head>
+    <body>
+        <h3>1. row(기본값)</h3>
+        <section class="box01">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>2. row-reverse</h3>
+        <section class="box02">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>3. column</h3>
+        <section class="box03">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+        <hr>
+        <h3>4. column-reverse</h3>
+        <section class="box04">
+            <div>박스1</div>
+            <div>박스2</div>
+            <div>박스3</div>
+            <div>박스4</div>
+            <div>박스5</div>
+        </section>
+    </body>
+</html>
